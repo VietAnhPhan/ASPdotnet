@@ -1,0 +1,8 @@
+@{
+    ViewData["Title"] = "Access denied";
+    Layout = "_ErrorLayout"; // Minimal layout: Bootstrap, no navbar/footer
+}
+
+<h1 class="text-danger">@ViewData["Title"]</h1>
+<p>You don't have permission to view this page.</p>
+<a asp-controller="Home" asp-action="Index">Back to Home</a>

@@ -1,3 +1,5 @@
+using WebApplication1.Entities;
+
 namespace WebApplication1.Models
 {
     // Filter values bound from the query string, e.g. /excel-practice?Filter.Region=North
@@ -16,6 +18,7 @@ namespace WebApplication1.Models
         public IReadOnlyList<SalesRecord> Rows { get; set; } = [];
         public IReadOnlyList<string> Regions { get; set; } = [];
         public IReadOnlyList<string> Products { get; set; } = [];
+        public IReadOnlyList<Order> Orders { get; set; } = [];
 
         public int TotalUnits => Rows.Sum(r => r.Units);
         public decimal TotalRevenue => Rows.Sum(r => r.Total);

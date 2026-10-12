@@ -1,0 +1,11 @@
+@model WebApplication1.Models.ProfileViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+
+<p>Username: @Model.Username</p>
+<p>Email: @Model.Email</p>
+<p>Roles: @string.Join(", ", Model.Roles)</p>
